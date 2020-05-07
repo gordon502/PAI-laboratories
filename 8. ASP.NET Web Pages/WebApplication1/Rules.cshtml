@@ -1,0 +1,28 @@
+﻿@{ 
+    var rules = new List<String>();
+
+    if (Session["rules"] != null)
+    {
+        rules = (List<String>)Session["rules"];
+    }
+
+
+}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form action="~/Redirector.cshtml" method="post">
+            <input type="text" name="rule" />
+            <input type="submit" value="Dodaj" />
+        </form>
+        @for (int i = 1; i <= rules.Count; i++)
+        {
+            <div>Zasada @i: @rules[i - 1]</div>
+        }
+    </body>
+</html>
