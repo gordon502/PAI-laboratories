@@ -1,0 +1,27 @@
+#root {
+    margin: auto;
+    text-align: center;
+}
+
+
+.filterComponent {
+    border-bottom: solid grey;
+    padding: 20px;
+}
+
+.content {
+    border: solid black;
+}
+
+.todos {
+    padding: 20px;
+    border-bottom: solid grey;
+}
+
+.todosP {
+    border-bottom: solid grey;
+    padding-bottom: 20px;
+}
+.newTask {
+    padding: 20px;
+}
